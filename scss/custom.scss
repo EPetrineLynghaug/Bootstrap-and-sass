@@ -1,0 +1,24 @@
+// Default variable overrides
+$body-bg: #fed;
+$body-color: #34a;
+$primary: teal;
+$secondary: green;
+$success: lightgreen;
+
+// Disable default grid classes and enable CSS Grid
+$enable-grid-classes: false;
+$enable-cssgrid: true;
+
+@import '../node_modules/bootstrap/scss/functions';
+@import '../node_modules/bootstrap/scss/variables';
+$new-breakpoints: (
+    xl: 1280px,
+    xxl: 1600px
+);
+$grid-breakpoints: map-merge($grid-breakpoints, $new-breakpoints);
+$new-container-max-widths: (
+  xl: 1220px,
+  xxl: 1520px
+);
+$container-max-widths: map-merge($container-max-widths, $new-container-max-widths);
+@import "../node_modules/bootstrap/scss/bootstrap";

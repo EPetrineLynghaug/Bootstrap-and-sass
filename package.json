@@ -1,0 +1,18 @@
+{
+  "name": "bootstrap-and-sass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  "watch": "sass --watch scss/custom.scss:css/style.css"
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  },
+  "devDependencies": {
+    "sass": "1.77.6"
+  }
+}
