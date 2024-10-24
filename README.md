@@ -22,12 +22,16 @@ Begin by setting up a new Node.js project and installing Bootstrap:
 2.	**Project Structure**
 Create the following folder structure:
 project-root/
-├── node_modules/
-├── scss/
-│   └── custom.scss
-├── css/
-├── index.html
-├── package.json
+├── node_modules/          # Installed npm packages (auto-generated)
+├── scss/                  # Source folder for SCSS files
+│   ├── custom.scss        # Main custom SCSS file for overrides and imports
+│   └── _variables.scss    # Optional: File for custom variables and settings
+├── css/                   # Compiled CSS output
+│   ├── style.css          # Compiled CSS from custom.scss
+│   └── style.css.map      # Source map for debugging
+├── index.html             # Main HTML file for the project
+├── package.json           # npm configuration file with scripts and dependencies
+└── README.md              # Project documentation
 
 3.	**Configuring Sass and Bootstrap**
 - Import Bootstrap’s SCSS file in scss/custom.scss:
